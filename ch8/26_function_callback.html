@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>함수우선순위</title>
+    <script>
+        function callTenTimes(callback) {
+            for (var i=0; i < 3; i++) {
+                callback();
+            }
+        }
+        var callback = function() {
+            alert('함수 호출');
+        };
+
+        callTenTimes(callback);
+
+        // callback을 익명함수로 넣어서 매개변수로 전달해서 함수를 호출
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

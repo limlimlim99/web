@@ -1,0 +1,20 @@
+<!-- https://rintiantta.github.io/academy-html/guide/chapter10.html#%EA%B8%B0%EB%B3%B8-%EC%98%88%EC%A0%9C-10-1-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%AC%B8%EC%84%9C-%EA%B0%9D%EC%B2%B4-%EC%82%AC%EC%9A%A9-%EC%98%A4%EB%A5%98 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Object Model</title>
+    <script>
+        window.onload = function() {
+            var image = document.getElementById('image');
+
+            image.src = 'http://placekitten.com/300/400';  //사이즈를 바꾸면 다른 고양이의 사진으로 보여줌
+            image.width = 300;
+            image.height = 200;
+
+        };
+    </script>
+</head>
+<body>
+    <img id="image"> //끝에 /안해줘도됨
+</body>
+</html>

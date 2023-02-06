@@ -1,0 +1,24 @@
+<!-- https://rintiantta.github.io/academy-html/guide/chapter10.html#%EA%B8%B0%EB%B3%B8-%EC%98%88%EC%A0%9C-10-1-%EC%8B%A4%ED%96%89-%EC%88%9C%EC%84%9C%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%AC%B8%EC%84%9C-%EA%B0%9D%EC%B2%B4-%EC%82%AC%EC%9A%A9-%EC%98%A4%EB%A5%98 -->
+<!-- script 태그를 head 태그 내부에 삽입. 유지보수에 유리 
+반변 파일 용량이 크면 기다림 현상 발생 -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Document <Object> Model</Object></title>
+    <script>
+        window.onload = function() {
+            // h1태그의 배경 색상을 변경
+            document.querySelector('h1').style.backgroundColor = 'red';
+        
+            // h2 태그의 글자 색상을 변경
+            document.querySelector('h2').style.color = 'red';
+        };
+    </script>
+</head>
+<body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+
+</body>
+</html>

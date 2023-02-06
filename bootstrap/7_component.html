@@ -1,0 +1,156 @@
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_images.asp -->
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Last compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .b {
+            border: solid 1px rgba(125, 125, 125);
+            /* 255, 255, 255 는 흰색*/
+        }
+    </style>
+</head>
+
+<body>
+  
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+    
+
+      <!-- Button -->
+  <div class="container">
+    <h2>Button Outline</h2>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+  </div>
+
+
+    <div class="container-fluid">
+      <h3>Basic Navbar Example</h3>
+      <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+      <p>The navbar-expand-xl|lg|md|sm class determines when the navbar should stack vertically (on extra large, large, medium or small screens).</p>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <h2>Form Validation</h2>
+      <p>In this example, we use <code>.was-validated</code> to indicate what's missing before submitting the form:</p>
+      <form action="/action_page.php" class="was-validated">
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+
+    <!-- dropdown -->
+    <div class="container">
+      <h2>Dropdowns</h2>
+      <p>The .dropdown class is used to indicate a dropdown menu.</p>
+      <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+      <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    
+  <!-- Card -->
+  <div class="container">
+    <h2>Card Image</h2>
+    <p>Image at the top (card-img-top):</p>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="img1.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    <br>
+    
+    <p>Image at the bottom (card-img-bottom):</p>
+    <div class="card" style="width:400px">
+      <div class="card-body">
+        <h4 class="card-title">Jane Doe</h4>
+        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+      <img class="card-img-bottom" src="img2.jpg" alt="Card image" style="width:100%">
+    </div>
+  </div>
+
+  <!-- icon -->
+  <div class="container">  
+    <h1>My Icons <i class="fas fa-heart"></i></h1>
+    <p>An icon along with some text: <i class="fas fa-thumbs-up"></i></p> 
+  </div>
+    
+  <div class="container">
+    <p>Others:</p>
+    <i class="fas fa-cloud"></i>
+    <i class="fas fa-coffee"></i>
+    <i class="fas fa-car"></i>
+    <i class="fas fa-file"></i>
+    <i class="fas fa-bars"></i>
+  </div>
+  
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

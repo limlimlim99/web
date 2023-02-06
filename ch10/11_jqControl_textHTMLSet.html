@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- text메서드는 일반 글자처럼 출력되는 반면 html 메서드는 글자에 태그가 적용 -->
+<head>
+    <title>Java Script</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('h1:nth-child(1)').text('<a href="#">text()</a>');  //text
+            $('h1:nth-child(2)').html('<a href="#">html()</a>');  //html
+            $('h6').html('<a href="#">html()</a>');
+        });
+    </script>
+</head>
+<body>
+    <h1>Header - 0</h1>
+    <h1>Header - 0</h1>
+    <h1>Header - 0</h1>
+</body>
+</html>
